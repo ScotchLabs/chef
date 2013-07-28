@@ -3,8 +3,8 @@
     "nginx": {
       "locked_version": "0.101.6"
     },
-    "redis": {
-      "locked_version": "3.0.4"
+    "redisio": {
+      "locked_version": "1.7.0"
     },
     "postfix": {
       "locked_version": "2.1.6"
@@ -30,11 +30,8 @@
     "ohai": {
       "locked_version": "1.0.2"
     },
-    "install_from": {
-      "locked_version": "3.0.4"
-    },
-    "metachef": {
-      "locked_version": "3.0.4"
+    "ulimit": {
+      "locked_version": "0.3.0"
     },
     "openssl": {
       "locked_version": "1.0.2"
