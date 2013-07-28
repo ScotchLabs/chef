@@ -1,0 +1,43 @@
+{
+  "sources": {
+    "nginx": {
+      "locked_version": "0.101.6"
+    },
+    "redis": {
+      "locked_version": "3.0.4"
+    },
+    "postfix": {
+      "locked_version": "2.1.6"
+    },
+    "mysql": {
+      "locked_version": "3.0.2"
+    },
+    "build-essential": {
+      "locked_version": "1.4.0"
+    },
+    "runit": {
+      "locked_version": "1.1.6"
+    },
+    "yum": {
+      "locked_version": "2.3.0"
+    },
+    "bluepill": {
+      "locked_version": "2.2.2"
+    },
+    "rsyslog": {
+      "locked_version": "1.6.0"
+    },
+    "ohai": {
+      "locked_version": "1.0.2"
+    },
+    "install_from": {
+      "locked_version": "3.0.4"
+    },
+    "metachef": {
+      "locked_version": "3.0.4"
+    },
+    "openssl": {
+      "locked_version": "1.0.2"
+    }
+  }
+}
