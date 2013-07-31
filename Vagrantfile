@@ -17,9 +17,13 @@ Vagrant.configure("2") do |config|
   # doesn't already exist on the user's system.
   config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04-i386_provisionerless.box"
 
+  config.omnibus.chef_version = :latest
+
+  config.berkshelf.enabled = true
+
   # This can be set to the host name you wish the guest machine to have. Vagrant
   # will automatically execute the configuration necessary to make this happen.
-  config.vm.host_name = "scotch"
+  # config.vm.host_name = "scotch"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
@@ -64,9 +68,14 @@ Vagrant.configure("2") do |config|
     chef.cookbooks_path = "cookbooks"
     chef.roles_path = "roles"
     chef.data_bags_path = "data_bags"
-    chef.add_recipe "mysql"
-    chef.add_role "web"
-    # chef.json = { :mysql_password => "foo" }
+    chef.add_role "scotch"
+    chef.json = {
+      :mysql => {
+        :server_root_password => 'rootpass',
+        :server_debian_password => 'debpass',
+        :server_repl_password => 'replpass'
+      }
+    }
   end
 
   # Enable provisioning with chef server, specifying the chef server URL,
