@@ -11,3 +11,5 @@ chef_server_url          "https://api.opscode.com/organizations/scotch-labs"
 cache_type               'BasicFile'
 cache_options( :path => "#{ENV['HOME']}/.chef/checksums" )
 cookbook_path            ["#{current_dir}/../cookbooks"]
+knife[:digital_ocean_client_id] = '4fEG3msCkhGLu6v2ylnLS'
+knife[:digital_ocean_api_key]   = 'Vm0cxlpjjwe38nRScntcOSvRmWHmVmtS2g9ddaTxn'

@@ -65,8 +65,8 @@ Vagrant.configure("2") do |config|
   # some recipes and/or roles.
   #
   config.vm.provision :chef_solo do |chef|
-    chef.cookbooks_path = "cookbooks"
-    chef.roles_path = "roles"
+    # chef.cookbooks_path = "./cookbooks"
+    chef.roles_path = "./roles"
     chef.data_bags_path = "data_bags"
     chef.add_role "scotch"
     chef.json = {
