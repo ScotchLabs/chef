@@ -1,6 +1,6 @@
 name "scotch"
 description "Configuration for the Scotch server"
-run_list "recipe[apt]", "recipe[build-essential]", "recipe[mysql::server]", "recipe[redisio]", "recipe[ruby-src]", "recipe[nginx]", "recipe[postfix]"
+run_list "recipe[apt]", "recipe[build-essential]", "recipe[mysql::server]", "recipe[redisio]", "recipe[ruby-src]", "recipe[nginx]", "recipe[postfix]", "recipe[scotch]"
 override_attributes({
   "starter_name" => "Scotch Labs",
 })

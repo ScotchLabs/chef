@@ -1,0 +1,10 @@
+<%= node['scotch']['environment'] %>:
+adapter: <%= node['scotch']['adapter'] %>
+database: <%= node['scotch']['database'] %>
+username: <%= node['scotch']['database_user'] %>
+<% if node['scotch']['database_password'] %>
+  password: <%= node['scotch']['database_password'] %>
+<% end %>
+host: <%= node['scotch']['database_host'] %>
+encoding: utf8
+min_messages: warning
